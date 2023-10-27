@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+div {
+    text-align: center;
+}
+
+/* staggering delay */
+
+
+.schools .school:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.schools .school:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.schools .school:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.about-me {
+    text-align: center;
+    font-size: 35px;
+}
+.fade-in {
+    opacity: 0; /* Initially set to be invisible */
+    animation: fadeIn 1.5s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.name {
+    font-size: 100px;
+}
+
+.school-name {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.school-desc {
+    font-size: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
