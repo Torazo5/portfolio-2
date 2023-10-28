@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 body {
-    color: rgb(0, 0, 0);
+    color: rgb(54, 54, 54);
     margin: 0;
     padding: 0;
     font-family: 'Raleway';
@@ -17,14 +17,16 @@ section {
 div {
     text-align: center;
 }
-
-.pink {
-    background-color: pink;
-}
-
 /* staggering delay */
-
-
+.logo {
+    width: 80px;
+    height: auto;
+}
+.sub-title {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
 .schools .school:nth-child(2) {
     transition-delay: 200ms;
 }
